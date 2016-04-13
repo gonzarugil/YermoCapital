@@ -66,86 +66,17 @@
         });
     </script>
     <div class="">
-        <div class="parallax-container">
-            <div class="parallax"><img src="media/Actividades/special-wallpaper.png" /></div>
-        </div>
 
-
-        <div class="section yellow lighten-3">
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="media/Actividades/hackeo-terminal-imagen.jpg">
-                            <span class="card-title">Hackea!</span>
-                        </div>
-                        <div class="card-content">
-                            <p>¿No logras acceder en un ordenador y te expulsa? ¡No si eres un genio informático! En el yermo podras aprender a acceder a cualquier ordenador del que hayas sido expulsado previamente</p>
-
-                        </div>
-
-                        <div class="card-action">
-                            <a href="#hackeo-video">200 Chapas el curso!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="media/Actividades/cerraduras-imagen.jpg">
-                            <span class="card-title">Roba!</span>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                Aprende a robar en Yermo Capital! Porque tomar la propiedad ajena puede ser una actividad muy divertida, Los bienes más preciados de tus seres cercanos o de completos desconocidos pueden ser tuyos con muy poco esfuerzo si te apuntas a este curso. Robar es una actividad muy tipica del Yermo, lleno de saqueadores y bandidos. (No realizar sin la supervisión de un experto)
-                            </p>
-
-                        </div>
-
-                        <div class="card-action">
-                            <a href="#robar-video">Oferta! Roba 30 chapas para entrar al curso!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="media/Actividades/casino-imagen.png">
-                            <span class="card-title">Casinos!</span>
-                        </div>
-                        <div class="card-content">
-                            <p>
-                                ¿A quién no le gusta lanzar toneladas de chapas a los juegos de azar del Yermo? Gástate el dinero de la universidad de tus hijos en la Ruleta, la dote de tu boda en las trepidantes partidas de póker, y el dinero de la operación de cadera de tu suegra en nuestras mesas de blackjack ¡Ven a jugar con nosotros!
-                            </p>
-
-                        </div>
-
-                        <div class="card-action">
-                            <a href="#casino-video">Mínima apuesta: 500 Chapas</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="section yellow lighten-3">
             <div class="row container">
+                <h2 name="estado" class="header"><?php echo $_GET["estado"]; ?></h2>
 
-                <h2 class="header">Videos</h2>
-                <h4><a name="hackeo-video">Hackeo</a></h4>
-                <div class="video-container">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/zBCYAEudCM8?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <h4><a name="robar-video">Robar</a></h4>
-                <div class="video-container">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/HzHVJmP22d0?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <h4><a name="casino-video">Casino</a></h4>
-                <div class="video-container">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/B5F3jGzGGlQ?rel=0&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
-                </div>
+
+
 
             </div>
         </div>
+
 
     </div>
     <!-- FOOTER -->
@@ -176,7 +107,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

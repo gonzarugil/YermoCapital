@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Inicio</title>
+    <!-- TO DO ver que titulo es más apropiado -->
+</head>
+
+<body>
+
+    <!-- BARRA NAVEGACION -->
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper grey darken-3">
+                <a href="#" class="brand-logo">Yermo Capital</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <nav>
+
+        <div class="nav-wrapper grey darken-3">
+            <span href="#" class="brand-logo center">
+                    <audio name="audio" autoplay controls loop>
+                        <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
+                    </audio>
+                </span>
+        </div>
+    </nav>
+    <!-- CUERPO -->
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+
+        $(document).ready(function () {
+            $('input#input_text, textarea#textarea1').characterCounter();
+        });
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+        $(document).ready(function () {
+            $('.slider').slider({
+                full_width: false
+            });
+        });
+    </script>
+    <div class="">
+        <div class="parallax-container">
+            <div class="parallax"><img src="media/postales/postal-5.jpg" /></div>
+        </div>
+
+
+        <div class="section grey lighten-3">
+            <div class="row container">
+                <h2>POSTAL</h2>
+                <p>Pulsa la postal para ampliarla! En la parte inferior encontraras su número.</p>
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="media/postales/postal-1.jpg">
+                            <!-- random image -->
+                            <div class="caption center-align">
+                                <h3 class="black-text">Postal 1</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-2.jpg">
+                            <!-- random image -->
+                            <div class="caption left-align">
+                                <h3>Postal 2</h3>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-3.jpg">
+                            <!-- random image -->
+                            <div class="caption right-align">
+                                <h3>Postal 3</h3>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-4.jpg">
+                            <!-- random image -->
+                            <div class="caption center-align">
+                                <h3 class="black-text">Postal 4</h3>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-5.jpg">
+                            <!-- random image -->
+                            <div class="caption center-align">
+                                <h3>Postal 5</h3>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-6.jpg">
+                            <!-- random image -->
+                            <div class="caption center-align">
+                                <h3 class="black-text">Postal 6</h3>
+
+                            </div>
+                        </li>
+                        <li>
+                            <img src="media/postales/postal-7.jpg">
+                            <!-- random image -->
+                            <div class="caption center-align">
+                                <h3 class="black-text">Postal 7</h3>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <h4>Envia tu Postal por correo: </h4>
+
+                <form action="correo.php" method="post">
+                    <div class="input-field">
+                        <input name="nombre" placeholder="Nombre" id="first_name" type="text" class="validate" />
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="input-field">
+                        <input name="email" id="email" type="email" class="validate">
+                        <label for="email">Correo</label>
+                    </div>
+                    <div class="input-field">
+                        <select name="postal">
+                            <option value="" disabled selected>Elija su Postal</option>
+                            <option value="1">Postal 1</option>
+                            <option value="2">Postal 2</option>
+                            <option value="3">Postal 3</option>
+                            <option value="4">Postal 4</option>
+                            <option value="5">Postal 5</option>
+                            <option value="6">Postal 6</option>
+                            <option value="7">Postal 7</option>
+                        </select>
+                        <label>Seleccion de Postales</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea name="mensaje" id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Mensaje</label>
+                    </div>
+                    <input type="submit" value="Enviar" />
+                </form>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- FOOTER -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Información Adicional</h5>
+                    <p class="grey-text text-lighten-4">Las imagenes y contenidos de esta web son propiedad Bethesda Softworks. Su uso en esta página web es con fines didacticos para una práctica de la Asignatura Multimedia.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mapa del Sitio</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_visitar.html">Yermo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="alojamientos.html">Alojamiento</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_comer.html">Gastronomía</a></li>
+                        <li><a class="grey-text text-lighten-3" href="actividades.html">Actividades</a></li>
+                        <li><a class="grey-text text-lighten-3" href="postal.html">Postal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Victor Muñoz - Gonzalo Ruanes
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">

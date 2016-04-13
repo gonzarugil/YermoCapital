@@ -7,7 +7,7 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize.min.css" />
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/materialize.min.js"></script>
@@ -18,17 +18,32 @@
 
 <body>
     <!-- BARRA NAVEGACION -->
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper grey darken-3">
                 <a href="#" class="brand-logo">Yermo Capital</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="badges.html">Yermo</a></li>
-                    <li><a href="collapsible.html">Alojamiento</a></li>
-                    <li><a href="collapsible.html">Gastronomia</a></li>
-                    <li><a href="collapsible.html">Actividades</a></li>
-                    <li><a href="collapsible.html">Postal</a></li>
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
                 </ul>
 
             </div>
@@ -38,13 +53,11 @@
 
         <div class="nav-wrapper grey darken-3">
             <span href="#" class="brand-logo center">
-                    <audio controls loop>
+                    <audio name="audio" autoplay controls loop>
                         <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
                     </audio>
                 </span>
-
         </div>
-
     </nav>
     <!-- CUERPO -->
     <script>
@@ -135,31 +148,33 @@
 
             </div>
         </div>
-       ¡
+        ¡
     </div>
     <!-- FOOTER -->
     <footer class="page-footer grey darken-3">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                    <h5 class="white-text">Información Adicional</h5>
+                    <p class="grey-text text-lighten-4">Las imagenes y contenidos de esta web son propiedad Bethesda Softworks. Su uso en esta página web es con fines didacticos para una práctica de la Asignatura Multimedia.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
+                    <h5 class="white-text">Mapa del Sitio</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_visitar.html">Yermo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="alojamientos.html">Alojamiento</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_comer.html">Gastronomía</a></li>
+                        <li><a class="grey-text text-lighten-3" href="actividades.html">Actividades</a></li>
+                        <li><a class="grey-text text-lighten-3" href="postal.html">Postal</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2016 Copyright Victor Muñoz - Gonzalo Ruanes
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
         </div>
     </footer>

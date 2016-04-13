@@ -4,32 +4,164 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Inicio</title>
     <!-- TO DO ver que titulo es más apropiado -->
 </head>
 
 <body>
+
     <!-- BARRA NAVEGACION -->
-    <div class="navbar">
-        <ul>
-            <li><a class="active" href="#home">Inicio</a></li>
-            <li><a href="#news">Yermo</a></li>
-            <li><a href="#contact">Alojamiento</a></li>
-            <li><a href="#about">Que Comer</a></li>
-            <li><a href="#about">Actividades</a></li>
-            <li><a href="#about">Postal</a></li>
-            <li class="background-player" style="float:right">
-                <audio controls autoplay loop>
-                    <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
-                </audio>
-            </li>
-        </ul>
+    <script>
+        $(document).ready(function () {
+            $(".button-collapse").sideNav();
+        });
+    </script>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper grey darken-3">
+                <a href="#" class="brand-logo">Yermo Capital</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a name="Inicio" href="/">Inicio</a></li>
+                    <li><a name="Yermo" href="que_visitar.html">Yermo</a></li>
+                    <li><a name="Alojamentio" href="alojamientos.html">Alojamiento</a></li>
+                    <li><a name="Gastronomia" href="que_comer.html">Gastronomia</a></li>
+                    <li><a name="Actividades" href="actividades.html">Actividades</a></li>
+                    <li><a name="Postal" href="postal.html">Postal</a></li>
+                </ul>
+
+            </div>
+        </nav>
     </div>
+    <nav>
 
+        <div class="nav-wrapper grey darken-3">
+            <span href="#" class="brand-logo center">
+                    <audio name="audio" autoplay controls loop>
+                        <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
+                    </audio>
+                </span>
+        </div>
+    </nav>
     <!-- CUERPO -->
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+    <div class="">
+        <div class="parallax-container">
+            <div class="parallax"><img src="media/Lugares/Capitolio.jpg" /></div>
+        </div>
 
+
+        <div class="section yellow lighten-3">
+            <div class="row container">
+                <h2 class="header">Localizaciones</h2>
+                <div class="row">
+                    <div class="col s12 m5"><img class="materialboxed" width="100%" src="media/Lugares/Megaton%20Ciudad.jpg" data-caption="Megaton">
+                        <p></p><img class="materialboxed" width="100%" src="media/Lugares/Megaton%20Localizacion.jpg" data-caption="Megaton Mapa Local"></div>
+                    <div class="col s12 m7">
+                        <h4 class="header">Megaton</h4>
+                        <p>Megatón es un extenso asentamiento, ubicado en el interior de un gran cráter con una bomba nuclear sin detonar en su centro, dando lugar a su nombre. Está rodeado por muros improvisados con varios materiales reciclados, la mayor parte de su infraestructura proviene de piezas de aviones de un antiguo aeródromo cercano. Es uno de los dos mayores asentamientos humanos de Yermo Capital, con hasta 28 habitantes con nombre propio y varios colonos de Megatón genéricos, sólo superada por Rivet City en población.</p>
+                        <p>Megatón suele ser el primer asentamiento descubierto por el jugador tras abandonar el Refugio 101, por su proximidad al mismo, su distintiva forma y el hecho de que su ruta de llegada es prácticamente recta lo convierten en un lugar fácil de encontrar, y es, de hecho el primer retazo de civilización que el Trotamundos Solitario encuentra en el Yermo.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section yellow lighten-3">
+            <div class="row container">
+
+                <div class="row">
+                    <div class="col s12 m7">
+                        <h4 class="header">Rivet City</h4>
+                        <p>Rivet City es el mayor asentamiento de Yermo Capital, o en el área de Washington, DC. Sus habitantes viven en cuartos individuales dentro de un portaaviones. Hay guardias merodeando las 24 horas del día para proteger el barco de Saqueadores, Supermutantes, y todas las demás amenazas del Yermo. Rivet City tiene un área de compras llama «Mercado de Rivet City» (cerrado durante la noche), además de contar con un Museo de Historia americana, un laboratorio, dos bares y un hotel que puedes alquilar una casa por 120 chapas. En el laboratorio se encuentra ademas el Cabezón de inteligencia, en la esquina de una de las mesas.</p>
+                    </div>
+                    <div class="col s12 m5"><img class="materialboxed" width="100%" src="media/Lugares/rivet%20c.jpg" data-caption="Rivet City">
+                        <p></p><img class="materialboxed" width="100%" src="media/Lugares/river-city-localizacion.jpg" data-caption="Rivet City Localizacion"></div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="section yellow lighten-3">
+            <div class="row container">
+
+                <div class="row">
+                    <div class="col s12 m5"><img class="materialboxed" width="100%" src="media/Lugares/Lincoln-Memorial-lugar.jpg" data-caption="Monumento a Lincoln">
+                        <p></p><img class="materialboxed" width="100%" src="media/Lugares/Monumento-Lincoln-localizacion.jpg" data-caption="Monumento a Lincoln Localizacion"></div>
+                    <div class="col s12 m7">
+                        <h4 class="header">Monumento a Lincoln</h4>
+                        <p>El Monumento a Lincoln es un monumento conmemorativo construido en memoria del presidente de los Estados Unidos de América Abraham Lincoln. Se situa al final del National Mall en Washington D.C.</p>
+                        <p>El edificio, aunque en pie todavía, está dañado, y a la estatua de Lincoln le falta la cabeza (que se puede encontrar a manos de los esclavos huidos del Templo de la Unión).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section yellow lighten-3">
+            <div class="row container">
+
+                <div class="row">
+                    <div class="col s12 m7">
+                        <h4 class="header">Edificio del Capitolio</h4>
+                        <p>Cuando llegamos al edificio del Capitolio, si estamos un poco lejos de el, veremos varias explosiones, lo mejor es manternerse alejado, coger un Rifle francotirador y aniquilar cuanto puedas, pues la Mercenarios de la Compañia Talon estarán exterminando a los Supermutantes de la zona. Es una de las zonas con un combate a gran escala. Los Mercenarios de la Compañia Talon atacarán con todo: varios mercenarios, Cerebrobots... y los Supermutantes tendrán una gran presencia en la zona ya que habrá varios Supermutantes Maestros, bastantes Brutos Supermutantes, varios Caciques Supermutantes y muchos Supermutantes normales. En la parte de fuera,(si estas muy avanzado en el juego y tienes la expansion Broken Steel) encontrarás un equipo del Enclave, compuesto de 2 soldados, un oficial y un Sanguinario con control mental (si tienes el dispositivo para erradicar las ondas de control mental del Enclave, el Sanguinario eliminará a todos los que le rodeen). También, fuera, nos encontramos un Cacique Supermutante. Antes de entrar en el Capitolio, por la parte posterior, fuera, vemos que hay otro combate entre los Mercenarios de la Compañia Talon y Supermutantes otra vez. Pero si estamos avanzados en el juego, terminará pronto, pues un Vertibird del Enclave, pasará por encima y bombardeará la zona con bombas de plasma, y acabara con Supermutantes y los Mercenarios.</p>
+                    </div>
+                    <div class="col s12 m5"><img class="materialboxed" width="100%" src="media/Lugares/Capitolio.jpg" data-caption="Edificio del Capitolio">
+                        <p></p><img class="materialboxed" width="100%" src="media/Lugares/capitolio-localizacion.jpg" data-caption="Edificio del Capitolio"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Información Adicional</h5>
+                    <p class="grey-text text-lighten-4">Las imagenes y contenidos de esta web son propiedad Bethesda Softworks. Su uso en esta página web es con fines didacticos para una práctica de la Asignatura Multimedia.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Mapa del Sitio</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_visitar.html">Yermo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="alojamientos.html">Alojamiento</a></li>
+                        <li><a class="grey-text text-lighten-3" href="que_comer.html">Gastronomía</a></li>
+                        <li><a class="grey-text text-lighten-3" href="actividades.html">Actividades</a></li>
+                        <li><a class="grey-text text-lighten-3" href="postal.html">Postal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Victor Muñoz - Gonzalo Ruanes
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
