@@ -69,11 +69,11 @@
 
         <div class="section yellow lighten-3">
             <div class="row container">
-                <h2 name="estado" class="header"><?php echo $_GET["estado"]; ?></h2>
-
-
-
-
+                <h1 name="estado" class="header"><?php echo $_GET["estado"]; ?></h1>
+                <p>Revise la bandeja de Spam, es posible que se haya enviado a esta carpeta.
+                
+                ¡Y no dudes en enviar todas las postales que quieras! Gracias por usar nuestros servicios.</p>
+                <a href="index.html">Vuelve al indice.</a>
             </div>
         </div>
 
