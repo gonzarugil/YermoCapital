@@ -69,7 +69,7 @@
 
         <div class="section yellow lighten-3">
             <div class="row container">
-                <h1 name="estado" class="header"><?php echo $_GET["estado"]; ?></h1>
+                <h1 name="estado" class="header"><?php echo htmlspecialchars($_GET["estado"], ENT_QUOTES, 'UTF-8'); ?></h1>
                 <p>Revise la bandeja de Spam, es posible que se haya enviado a esta carpeta.
                 
                 ¡Y no dudes en enviar todas las postales que quieras! Gracias por usar nuestros servicios.</p>
