@@ -53,7 +53,7 @@
 
         <div class="nav-wrapper grey darken-3">
             <span href="#" class="brand-logo center">
-                    <audio name="audio" autoplay controls loop>
+                    <audio name="audio" autoplay controls loop/>
                         <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
                     </audio>
                 </span>
