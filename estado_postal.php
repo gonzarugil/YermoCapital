@@ -12,7 +12,7 @@
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Inicio</title>
+    <title>Postal Enviada</title>
     <!-- TO DO ver que titulo es más apropiado -->
 </head>
 
@@ -27,7 +27,9 @@
         <nav>
             <div class="nav-wrapper grey darken-3">
                 <a href="#" class="brand-logo">Yermo Capital</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse big-text">
+                    +
+                </a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a name="Inicio" href="/">Inicio</a></li>
@@ -53,7 +55,7 @@
 
         <div class="nav-wrapper grey darken-3">
             <span href="#" class="brand-logo center">
-                    <audio name="audio" autoplay controls loop/>
+                    <audio name="audio" autoplay="True" controls="True" loop="True">
                         <source src="media/audio/World%20on%20Fire.mp3" type="audio/mpeg">
                     </audio>
                 </span>
@@ -65,7 +67,7 @@
             $('.parallax').parallax();
         });
     </script>
-    <div class="">
+    <div>
 
         <div class="section yellow lighten-3">
             <div class="row container">
@@ -103,11 +105,9 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2016 Copyright Victor Muñoz - Gonzalo Ruanes
-                <a class="grey-text text-lighten-4 right" href="#!"></a>
             </div>
         </div>
     </footer>
 </body>
 
 </html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
