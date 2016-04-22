@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html lang="es">
 
 <head>
@@ -12,8 +12,9 @@
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Postal Enviada</title>
-    <!-- TO DO ver que titulo es más apropiado -->
+    <title>Turismo en Yermo Capital - Postal Enviada</title>
+    <meta name=“description” content=“Pagina de Estado de la Postal de la página web de turismo en Yermo Capital, lugar ficticio procedente de la saga de videojuegos
+          de Bethesda Fallout, Practica Final de la Asignatura Multimedia”>
 </head>
 
 <body>
@@ -92,7 +93,7 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Mapa del Sitio</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/">Inicio</a></li>
                         <li><a class="grey-text text-lighten-3" href="que_visitar.html">Yermo</a></li>
                         <li><a class="grey-text text-lighten-3" href="alojamientos.html">Alojamiento</a></li>
                         <li><a class="grey-text text-lighten-3" href="que_comer.html">Gastronomía</a></li>

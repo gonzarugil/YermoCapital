@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
 <html lang="es">
 
 <head>
@@ -12,8 +12,9 @@
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <title>Postal</title>
-    <!-- TO DO ver que titulo es más apropiado -->
+    <title>Turismo en Yermo Capital - Postal</title>
+    <meta name=“description” content=“Pagina de Envio de Postales de la página web de turismo en Yermo Capital, lugar ficticio procedente de la saga de videojuegos
+          de Bethesda Fallout, Practica Final de la Asignatura Multimedia”>
 </head>
 
 <body>
@@ -157,31 +158,33 @@
 
                 <form action="correo.php" method="post">
                     <div class="input-field">
-                        <input name="nombre" placeholder="Nombre" id="first_name" type="text" class="validate" />
+                        <input name="nombre" placeholder="Nombre" id="first_name" type="text" class="validate" required="True" />
                         <label for="first_name">Nombre</label>
                     </div>
                     <div class="input-field">
-                        <input name="email" id="email" type="email" class="validate">
+                        <input name="email" id="email" type="email" class="validate" required="True">
                         <label for="email">Correo</label>
                     </div>
                     <div class="input-field">
                         <select title="postal" id="postal" name="postal">
-                            <option name="default" value="" disabled="true" selected="true">Elija su Postal</option>
-                            <option name="Postal 1" value="1">Postal 1</option>
-                            <option name="Postal 1" value="2">Postal 2</option>
-                            <option name="Postal 1" value="3">Postal 3</option>
-                            <option name="Postal 1" value="4">Postal 4</option>
-                            <option name="Postal 1" value="5">Postal 5</option>
-                            <option name="Postal 1" value="6">Postal 6</option>
-                            <option name="Postal 1" value="7">Postal 7</option>
+                            <optgroup label="Postales">
+                                <option name="default" value="" disabled="true" selected="true" required="True">Elija su Postal</option>
+                                <option name="Postal 1" value="1">Postal 1</option>
+                                <option name="Postal 1" value="2">Postal 2</option>
+                                <option name="Postal 1" value="3">Postal 3</option>
+                                <option name="Postal 1" value="4">Postal 4</option>
+                                <option name="Postal 1" value="5">Postal 5</option>
+                                <option name="Postal 1" value="6">Postal 6</option>
+                                <option name="Postal 1" value="7">Postal 7</option>
+                            </optgroup>
                         </select>
                         <label for="postal">Seleccion de Postales</label>
                     </div>
                     <div class="input-field">
-                        <textarea name="mensaje" id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <textarea name="mensaje" id="icon_prefix2" class="materialize-textarea" required="True"></textarea>
                         <label for="icon_prefix2">Mensaje</label>
                     </div>
-                    <input type="submit" value="Enviar" />
+                    <input class="waves-effect waves-light btn" type="submit" value="Enviar" />
                 </form>
 
 
@@ -201,7 +204,7 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Mapa del Sitio</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="/">Inicio</a></li>
                         <li><a class="grey-text text-lighten-3" href="que_visitar.html">Yermo</a></li>
                         <li><a class="grey-text text-lighten-3" href="alojamientos.html">Alojamiento</a></li>
                         <li><a class="grey-text text-lighten-3" href="que_comer.html">Gastronomía</a></li>
